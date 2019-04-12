@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/MyStyle"
+        android:text="Make" />
+
+    <EditText
+        android:id="@+id/etMake"
+        style="@style/MyStyle1"
+        android:hint="Enter the name of a car" />
+
+    <TextView
+
+        style="@style/MyStyle"
+        android:text="Year" />
+
+    <EditText
+        android:id="@+id/etYear"
+        style="@style/MyStyle1"
+        android:inputType="number"
+        android:hint="Enter the year" />
+
+    <TextView
+        style="@style/MyStyle"
+        android:text="Color" />
+
+    <EditText
+        android:id="@+id/etColor"
+        style="@style/MyStyle1"
+        android:hint="Enter colour" />
+
+    <TextView
+        style="@style/MyStyle"
+        android:text="Purchase price($)" />
+
+    <EditText
+        android:id="@+id/etPrice"
+        style="@style/MyStyle1"
+        android:inputType="number"
+        android:hint="Enter purchase price" />
+
+    <TextView
+
+        style="@style/MyStyle"
+        android:text="Engine Size" />
+
+    <EditText
+        android:id="@+id/etSize"
+        style="@style/MyStyle1"
+        android:hint="Enter engine size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/btnCreate"
+            style="@style/MyStyle2"
+            android:text="Create Car" />
+
+        <Button
+            style="@style/MyStyle2"
+            android:text="Create Diesel" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="#FF5722"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvRes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
